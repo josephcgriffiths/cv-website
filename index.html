@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Joseph Griffiths – Portfolio</title>
+</head>
+<body>
+  <div data-include="partials/header.html"></div>
+
+  <main>
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>
+            Hi, I’m <span class="accent">Joseph Griffiths</span><br>
+            Computing lecturer &amp; aspiring software engineer.
+          </h1>
+          <p class="lead">
+            I build practical systems with Python, C, Go and SQL – from embedded projects on Raspberry Pi
+            to web tools and teaching resources for my students.
+          </p>
+          <p class="muted">
+            Currently teaching at the University of South Wales and exploring distributed systems,
+            backend development and databases.
+          </p>
+
+          <div class="cta">
+            <a href="cv.html" class="btn">View my CV</a>
+            <a href="https://github.com/josephcgriffiths" target="_blank" class="link">
+              View my GitHub →
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <!-- Update path if your photo lives somewhere else -->
+          <img src="assets/me.jpg" alt="Portrait of Joseph Griffiths">
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="projects">
+      <div class="container">
+        <header class="projects-header">
+          <h1>Featured Projects</h1>
+          <p class="muted">
+            A selection of projects that show how I approach systems, teaching tools, and backend work.
+            All code is available on GitHub.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Project 1: K&R C Exercises -->
+          <article class="project-card">
+            <!-- <img src="assets/knr-c.jpg" alt="K&R C programming examples"> -->
+            <div class="project-content">
+              <h2>K&amp;R C Programming Exercises</h2>
+              <p class="muted">C · Systems Programming · Algorithms</p>
+              <p>
+                A collection of programs and utilities as I work through
+                <em>The C Programming Language</em> (Kernighan &amp; Ritchie). Focuses on pointers,
+                manual memory management, string handling and implementing small Unix-style tools,
+                strengthening my core C and low-level problem-solving skills.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/josephcgriffiths/KR" target="_blank">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Automated Pi Plant Watering -->
+          <article class="project-card">
+            <!-- <img src="assets/plant-watering.jpg" alt="Automated plant watering system"> -->
+            <div class="project-content">
+              <h2>Automated Pi Plant Watering System</h2>
+              <p class="muted">Raspberry Pi · Avani Gardening HAT · Python</p>
+              <p>
+                An automated plant care system using a Raspberry Pi and Avani Gardening HAT to read soil
+                moisture and environmental sensors, then drive a water pump when plants need watering.
+                Written in Python with configurable thresholds, basic logging and safeguards to prevent
+                overwatering.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/josephcgriffiths/automated-plant-watering-system" target="_blank">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: C To-Do List Application -->
+          <article class="project-card">
+            <!-- <img src="assets/c-todo.jpg" alt="Terminal screenshot of C to-do list app"> -->
+            <div class="project-content">
+              <h2>C To-Do List Application</h2>
+              <p class="muted">C · CLI · File I/O</p>
+              <p>
+                A simple terminal-based to-do list manager written in C. Supports adding, listing and
+                removing tasks, storing them in a plain-text file for persistence. Built to practice
+                struct-based data modelling, linked lists, manual memory handling and basic file I/O in a small,
+                self-contained tool.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/josephcgriffiths/Todo-list" target="_blank">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Go Interpreter (WAIIG) -->
+          <article class="project-card">
+            <!-- <img src="assets/go-interpreter.jpg" alt="Go interpreter project"> -->
+            <div class="project-content">
+              <h2>Interpreter in Go (WAIIG)</h2>
+              <p class="muted">Go · Interpreters · Parsing</p>
+              <p>
+                An interpreter implemented in Go while following <em>Writing An Interpreter In Go</em>.
+                Includes a lexer, parser and evaluator for a small programming language, covering tokenising,
+                building an abstract syntax tree and executing expressions, functions and conditionals using
+                a clean, idiomatic Go architecture.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/josephcgriffiths/interpretor-in-go" target="_blank">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional: Recent / Teaching focus section -->
+    <section class="container" style="padding-block: 3rem;">
+      <h2 style="margin-bottom: 0.75rem;">What I’m focusing on now</h2>
+      <p class="muted">
+        Right now I’m exploring distributed systems with Raspberry Pi clusters, improving my backend skills
+        with Go and Flask, and building more practical examples to help students understand real-world
+        development workflows (Git, testing, containers and deployments).
+      </p>
+    </section>
+  </main>
+
+  <div data-include="partials/footer.html"></div>
+  <script defer src="assets/include.js"></script>
+</body>
+</html>
